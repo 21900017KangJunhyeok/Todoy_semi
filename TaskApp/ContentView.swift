@@ -13,8 +13,14 @@ struct ContentView: View {
     init() {
         UITextView.appearance().backgroundColor = .clear
     }
+    
+    @EnvironmentObject var timerModel: TimerModel
+
     var body: some View {
-       Memo()
+//       Memo()
+        Stimer()
+            .environmentObject(timerModel)
+        
     }
 
     
