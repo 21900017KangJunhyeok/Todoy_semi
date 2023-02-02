@@ -13,8 +13,8 @@
 		5BEDF1A5298A8216002B2375 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEDF1A4298A8216002B2375 /* ContentView.swift */; };
 		5BEDF1A7298A821F002B2375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BEDF1A6298A821F002B2375 /* Assets.xcassets */; };
 		5BEDF1AB298A821F002B2375 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BEDF1AA298A821F002B2375 /* Preview Assets.xcassets */; };
-		5BEDF1B4298A85ED002B2375 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEDF1B3298A85ED002B2375 /* Home.swift */; };
-		5BEDF1B6298A860E002B2375 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEDF1B5298A860E002B2375 /* HomeViewModel.swift */; };
+		5BEDF1B4298A85ED002B2375 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEDF1B3298A85ED002B2375 /* Memo.swift */; };
+		5BEDF1B6298A860E002B2375 /* MemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEDF1B5298A860E002B2375 /* MemoViewModel.swift */; };
 		5BEDF1B8298A8720002B2375 /* NewDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEDF1B7298A8720002B2375 /* NewDataView.swift */; };
 		5BEDF1BA298AC23E002B2375 /* DateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEDF1B9298AC23E002B2375 /* DateButton.swift */; };
 /* End PBXBuildFile section */
@@ -28,8 +28,8 @@
 		5BEDF1A6298A821F002B2375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BEDF1A8298A821F002B2375 /* TaskApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TaskApp.entitlements; sourceTree = "<group>"; };
 		5BEDF1AA298A821F002B2375 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5BEDF1B3298A85ED002B2375 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		5BEDF1B5298A860E002B2375 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		5BEDF1B3298A85ED002B2375 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		5BEDF1B5298A860E002B2375 /* MemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewModel.swift; sourceTree = "<group>"; };
 		5BEDF1B7298A8720002B2375 /* NewDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDataView.swift; sourceTree = "<group>"; };
 		5BEDF1B9298AC23E002B2375 /* DateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,7 +88,7 @@
 		5BEDF1B1298A85CC002B2375 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5BEDF1B3298A85ED002B2375 /* Home.swift */,
+				5BEDF1B3298A85ED002B2375 /* Memo.swift */,
 				5BEDF1B7298A8720002B2375 /* NewDataView.swift */,
 				5BEDF1B9298AC23E002B2375 /* DateButton.swift */,
 			);
@@ -98,7 +98,7 @@
 		5BEDF1B2298A85D7002B2375 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				5BEDF1B5298A860E002B2375 /* HomeViewModel.swift */,
+				5BEDF1B5298A860E002B2375 /* MemoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -174,9 +174,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BEDF19E298A8216002B2375 /* TaskAppApp.swift in Sources */,
-				5BEDF1B6298A860E002B2375 /* HomeViewModel.swift in Sources */,
+				5BEDF1B6298A860E002B2375 /* MemoViewModel.swift in Sources */,
 				5BEDF1A0298A8216002B2375 /* Persistence.swift in Sources */,
-				5BEDF1B4298A85ED002B2375 /* Home.swift in Sources */,
+				5BEDF1B4298A85ED002B2375 /* Memo.swift in Sources */,
 				5BEDF1A5298A8216002B2375 /* ContentView.swift in Sources */,
 				5BEDF1BA298AC23E002B2375 /* DateButton.swift in Sources */,
 				5BEDF1A3298A8216002B2375 /* TaskApp.xcdatamodeld in Sources */,

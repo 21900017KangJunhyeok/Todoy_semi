@@ -34,42 +34,60 @@ struct Memo: View {
                 .padding()
                 .padding(.top,UIApplication.shared.windows.first?.safeAreaInsets.top)
                 .background(Color.white)
-            
-                ScrollView(.vertical, showsIndicators: false, content: {
+                
+                //Empty view
+                
+                if results.isEmpty{
                     
-                    LazyVStack(alignment: .leading, spacing: 20){
+                    Spacer()
+                    
+                    Text("No Task....")
+                        .font(.title)
+                        .foregroundColor(.black)
+                        .fontWeight(.heavy)
+                    
+                    Spacer()
+                    
+                }
+                else{
+                    ScrollView(.vertical, showsIndicators: false, content: {
                         
-                        ForEach(results) {task in
+                        LazyVStack(alignment: .leading, spacing: 20){
                             
-                            VStack(alignment: .leading,spacing: 5, content: {
+                            ForEach(results) {task in
                                 
-                                Text(task.content ?? "")
-                                    .font(.title)
-                                    .fontWeight(.bold)
-                                
-                                Text(task.date ?? Date(), style: .date)
-                                    .fontWeight(.bold)
-                            })
-                            .foregroundColor(.black)
-                            .contextMenu{
-                                
-                                Button(action: {
-                                    homeData.EditItem(item: task)
-                                }, label: {
-                                    Text("Edit")
+                                VStack(alignment: .leading,spacing: 5, content: {
+                                    
+                                    Text(task.content ?? "")
+                                        .font(.title)
+                                        .fontWeight(.bold)
+                                    
+                                    Text(task.date ?? Date(), style: .date)
+                                        .fontWeight(.bold)
                                 })
-                                
-                                Button(action: {
-                                    context.delete(task)
-                                    try! context.save() 
-                                }, label: {
-                                    Text("Delete")
-                                })
+                                .foregroundColor(.black)
+                                .contextMenu{
+                                    
+                                    Button(action: {
+                                        homeData.EditItem(item: task)
+                                    }, label: {
+                                        Text("Edit")
+                                    })
+                                    
+                                    Button(action: {
+                                        context.delete(task)
+                                        try! context.save()
+                                    }, label: {
+                                        Text("Delete")
+                                    })
+                                }
                             }
                         }
-                    }
-                    .padding()
-                })
+                        .padding()
+                    })
+                }
+            
+                
             }
             
             Button(action: {homeData.isNewData.toggle()}, label: {
