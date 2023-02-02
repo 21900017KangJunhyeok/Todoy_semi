@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct NewDataView: View {
-    @ObservedObject var homeData : MemoViewModel
+    @ObservedObject var memoData : MemoViewModel
     @Environment(\.managedObjectContext) var context
     var body: some View {
         VStack{
             
             HStack{
                 
-                Text("\(homeData.updateItem == nil ? "Add New" : "Update") Task")
+                Text("\(memoData.updateItem == nil ? "Add New" : "Update") Task")
                     .font(.system(size: 65))
                     .fontWeight(.heavy)
                     .foregroundColor(.black)
@@ -24,7 +24,7 @@ struct NewDataView: View {
             }
             .padding()
             
-            TextEditor(text: $homeData.content)
+            TextEditor(text: $memoData.content)
                 .padding()
             
             Divider()
@@ -43,21 +43,21 @@ struct NewDataView: View {
             
             HStack(spacing: 10){
                 
-                DateButton(title: "Today", homedata: homeData)
+                DateButton(title: "Today", memoData: memoData)
                 
-                DateButton(title: "Tomorrow", homedata: homeData)
+                DateButton(title: "Tomorrow", memoData: memoData)
                 
-                DatePicker("", selection: $homeData.date, displayedComponents: .date)
+                DatePicker("", selection: $memoData.date, displayedComponents: .date)
                     .labelsHidden()
                 
             }
             .padding()
             
             //추가 버튼
-            Button(action: {homeData.writeData(context: context)}, label: {
+            Button(action: {memoData.writeData(context: context)}, label: {
                 
                 Label(
-                    title: {Text(homeData.updateItem == nil ? "Add Now" : "Update")
+                    title: {Text(memoData.updateItem == nil ? "Add Now" : "Update")
                             .font(.title2)
                             .foregroundColor(.white)
                             .fontWeight(.bold)
@@ -73,8 +73,8 @@ struct NewDataView: View {
                 .cornerRadius(8)
             })
             .padding()
-            .disabled(homeData.content == "" ? true : false)
-            .opacity(homeData.content == "" ? 0.5 : 1 )
+            .disabled(memoData.content == "" ? true : false)
+            .opacity(memoData.content == "" ? 0.5 : 1 )
  
         }
         .background(Color.black.opacity(0.06).ignoresSafeArea(.all, edges: .bottom))

@@ -9,7 +9,7 @@ import SwiftUI
 import CoreData
 
 struct Memo: View {
-    @StateObject var homeData = MemoViewModel()
+    @StateObject var memoData = MemoViewModel()
     
     //fetching data
     @FetchRequest(entity: Task.entity(), sortDescriptors: [NSSortDescriptor(key: "date", ascending: true)],animation: .spring()) var results : FetchedResults<Task>
@@ -69,7 +69,7 @@ struct Memo: View {
                                 .contextMenu{
                                     
                                     Button(action: {
-                                        homeData.EditItem(item: task)
+                                        memoData.EditItem(item: task)
                                     }, label: {
                                         Text("Edit")
                                     })
@@ -90,7 +90,7 @@ struct Memo: View {
                 
             }
             
-            Button(action: {homeData.isNewData.toggle()}, label: {
+            Button(action: {memoData.isNewData.toggle()}, label: {
                 Image(systemName: "plus")
                     .font(.largeTitle)
                     .foregroundColor(.white)
@@ -104,9 +104,9 @@ struct Memo: View {
         })
         .ignoresSafeArea(.all, edges: .top)
         .background(Color.black.opacity(0.06).ignoresSafeArea(.all,edges: .all))
-        .sheet(isPresented: $homeData.isNewData, content: {
+        .sheet(isPresented: $memoData.isNewData, content: {
             
-            NewDataView(homeData: homeData)
+            NewDataView(memoData: memoData)
             
         })
     }
