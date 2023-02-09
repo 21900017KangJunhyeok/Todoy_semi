@@ -11,8 +11,8 @@ struct LogBackground: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             Log()
-        }
-        .frame(maxWidth: .infinity)
+        } 
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background{
             ZStack{
                 VStack{

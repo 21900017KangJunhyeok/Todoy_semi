@@ -62,13 +62,12 @@ struct RingCardView: View {
             RoundedRectangle(cornerRadius: 25, style: .continuous)
                 .fill(Color("SKYBLUE"))
         }
-    }
+    } 
 }
 
 struct RingCardView_Previews: PreviewProvider {
     static var previews: some View {
         LogBackground()
-//        RingCardView()
     }
 }
 

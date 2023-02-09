@@ -14,7 +14,7 @@ struct Ring: Identifiable{
     var keyIcon: String
     var keyColor: Color
     var isText: Bool = false
-}
+} 
 
 var rings: [Ring] = [
     

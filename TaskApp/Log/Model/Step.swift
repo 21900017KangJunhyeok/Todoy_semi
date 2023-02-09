@@ -12,7 +12,7 @@ struct Step: Identifiable{
     var value: CGFloat
     var key: String
     var color: Color = Color(.purple)
-}
+} 
 
 var step: [Step] = [
     Step(value: 500, key: "1-4 AM"),

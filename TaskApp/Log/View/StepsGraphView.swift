@@ -128,7 +128,7 @@ struct BarGraph: View {
         
         return max
     }
-}
+} 
 
 struct AnimatedBarGraph: View{
     var step: Step

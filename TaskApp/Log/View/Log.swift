@@ -113,7 +113,7 @@ struct Log: View {
         }
     }
     
-    
+     
     //MARK: Extracting Current Week
     func extraCurrentWeek(){
         let calendar = Calendar.current
