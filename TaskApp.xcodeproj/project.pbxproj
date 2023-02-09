@@ -7,19 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B19BBC0298B766A003B0F8D /* Stimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19BBBF298B766A003B0F8D /* Stimer.swift */; };
+		5B19BBC2298B7685003B0F8D /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19BBC1298B7685003B0F8D /* TimerViewModel.swift */; };
+		5B19BBC4298B7FD1003B0F8D /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19BBC3298B7FD1003B0F8D /* TimerModel.swift */; };
+		5B5F5D59299216E7008F86AC /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F5D58299216E7008F86AC /* Ring.swift */; };
+		5B5F5D5B29921888008F86AC /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F5D5A29921888008F86AC /* Step.swift */; };
+		5B5F5D5D29921937008F86AC /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F5D5C29921937008F86AC /* Log.swift */; };
+		5B5F5D5F29921B3B008F86AC /* LogBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F5D5E29921B3B008F86AC /* LogBackground.swift */; };
+		5B5F5D61299242B2008F86AC /* RingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F5D60299242B2008F86AC /* RingCardView.swift */; };
 		5BEDF19E298A8216002B2375 /* TaskAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEDF19D298A8216002B2375 /* TaskAppApp.swift */; };
 		5BEDF1A0298A8216002B2375 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEDF19F298A8216002B2375 /* Persistence.swift */; };
 		5BEDF1A3298A8216002B2375 /* TaskApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5BEDF1A1298A8216002B2375 /* TaskApp.xcdatamodeld */; };
 		5BEDF1A5298A8216002B2375 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEDF1A4298A8216002B2375 /* ContentView.swift */; };
 		5BEDF1A7298A821F002B2375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BEDF1A6298A821F002B2375 /* Assets.xcassets */; };
 		5BEDF1AB298A821F002B2375 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BEDF1AA298A821F002B2375 /* Preview Assets.xcassets */; };
-		5BEDF1B4298A85ED002B2375 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEDF1B3298A85ED002B2375 /* Home.swift */; };
-		5BEDF1B6298A860E002B2375 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEDF1B5298A860E002B2375 /* HomeViewModel.swift */; };
+		5BEDF1B4298A85ED002B2375 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEDF1B3298A85ED002B2375 /* Memo.swift */; };
+		5BEDF1B6298A860E002B2375 /* MemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEDF1B5298A860E002B2375 /* MemoViewModel.swift */; };
 		5BEDF1B8298A8720002B2375 /* NewDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEDF1B7298A8720002B2375 /* NewDataView.swift */; };
 		5BEDF1BA298AC23E002B2375 /* DateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEDF1B9298AC23E002B2375 /* DateButton.swift */; };
+		5BF4DD2929948E8200A2B711 /* StepsGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF4DD2829948E8200A2B711 /* StepsGraphView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B19BBBF298B766A003B0F8D /* Stimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stimer.swift; sourceTree = "<group>"; };
+		5B19BBC1298B7685003B0F8D /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		5B19BBC3298B7FD1003B0F8D /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
+		5B5F5D58299216E7008F86AC /* Ring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
+		5B5F5D5A29921888008F86AC /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		5B5F5D5C29921937008F86AC /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		5B5F5D5E29921B3B008F86AC /* LogBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogBackground.swift; sourceTree = "<group>"; };
+		5B5F5D60299242B2008F86AC /* RingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingCardView.swift; sourceTree = "<group>"; };
 		5BEDF19A298A8216002B2375 /* TaskApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BEDF19D298A8216002B2375 /* TaskAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAppApp.swift; sourceTree = "<group>"; };
 		5BEDF19F298A8216002B2375 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -28,10 +45,11 @@
 		5BEDF1A6298A821F002B2375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BEDF1A8298A821F002B2375 /* TaskApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TaskApp.entitlements; sourceTree = "<group>"; };
 		5BEDF1AA298A821F002B2375 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5BEDF1B3298A85ED002B2375 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		5BEDF1B5298A860E002B2375 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		5BEDF1B3298A85ED002B2375 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		5BEDF1B5298A860E002B2375 /* MemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewModel.swift; sourceTree = "<group>"; };
 		5BEDF1B7298A8720002B2375 /* NewDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDataView.swift; sourceTree = "<group>"; };
 		5BEDF1B9298AC23E002B2375 /* DateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateButton.swift; sourceTree = "<group>"; };
+		5BF4DD2829948E8200A2B711 /* StepsGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsGraphView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +63,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B19BBBB298B74FC003B0F8D /* Memo */ = {
+			isa = PBXGroup;
+			children = (
+				5BEDF1B1298A85CC002B2375 /* View */,
+				5BEDF1B2298A85D7002B2375 /* ViewModel */,
+			);
+			path = Memo;
+			sourceTree = "<group>";
+		};
+		5B19BBBC298B7513003B0F8D /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				5B19BBBE298B7524003B0F8D /* ViewModel */,
+				5B19BBBD298B751D003B0F8D /* View */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		5B19BBBD298B751D003B0F8D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5B19BBBF298B766A003B0F8D /* Stimer.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5B19BBBE298B7524003B0F8D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5B19BBC1298B7685003B0F8D /* TimerViewModel.swift */,
+				5B19BBC3298B7FD1003B0F8D /* TimerModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5B5F5D552992167D008F86AC /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				5B5F5D57299216BA008F86AC /* Model */,
+				5B5F5D5629921684008F86AC /* View */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		5B5F5D5629921684008F86AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5B5F5D5C29921937008F86AC /* Log.swift */,
+				5B5F5D5E29921B3B008F86AC /* LogBackground.swift */,
+				5B5F5D60299242B2008F86AC /* RingCardView.swift */,
+				5BF4DD2829948E8200A2B711 /* StepsGraphView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5B5F5D57299216BA008F86AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5B5F5D58299216E7008F86AC /* Ring.swift */,
+				5B5F5D5A29921888008F86AC /* Step.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		5BEDF191298A8215002B2375 = {
 			isa = PBXGroup;
 			children = (
@@ -64,8 +146,9 @@
 		5BEDF19C298A8216002B2375 /* TaskApp */ = {
 			isa = PBXGroup;
 			children = (
-				5BEDF1B2298A85D7002B2375 /* ViewModel */,
-				5BEDF1B1298A85CC002B2375 /* View */,
+				5B5F5D552992167D008F86AC /* Log */,
+				5B19BBBC298B7513003B0F8D /* Timer */,
+				5B19BBBB298B74FC003B0F8D /* Memo */,
 				5BEDF19D298A8216002B2375 /* TaskAppApp.swift */,
 				5BEDF19F298A8216002B2375 /* Persistence.swift */,
 				5BEDF1A4298A8216002B2375 /* ContentView.swift */,
@@ -88,7 +171,7 @@
 		5BEDF1B1298A85CC002B2375 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5BEDF1B3298A85ED002B2375 /* Home.swift */,
+				5BEDF1B3298A85ED002B2375 /* Memo.swift */,
 				5BEDF1B7298A8720002B2375 /* NewDataView.swift */,
 				5BEDF1B9298AC23E002B2375 /* DateButton.swift */,
 			);
@@ -98,7 +181,7 @@
 		5BEDF1B2298A85D7002B2375 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				5BEDF1B5298A860E002B2375 /* HomeViewModel.swift */,
+				5BEDF1B5298A860E002B2375 /* MemoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -173,13 +256,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B19BBC4298B7FD1003B0F8D /* TimerModel.swift in Sources */,
+				5B5F5D59299216E7008F86AC /* Ring.swift in Sources */,
+				5BF4DD2929948E8200A2B711 /* StepsGraphView.swift in Sources */,
+				5B5F5D61299242B2008F86AC /* RingCardView.swift in Sources */,
+				5B19BBC2298B7685003B0F8D /* TimerViewModel.swift in Sources */,
 				5BEDF19E298A8216002B2375 /* TaskAppApp.swift in Sources */,
-				5BEDF1B6298A860E002B2375 /* HomeViewModel.swift in Sources */,
+				5BEDF1B6298A860E002B2375 /* MemoViewModel.swift in Sources */,
 				5BEDF1A0298A8216002B2375 /* Persistence.swift in Sources */,
-				5BEDF1B4298A85ED002B2375 /* Home.swift in Sources */,
+				5BEDF1B4298A85ED002B2375 /* Memo.swift in Sources */,
 				5BEDF1A5298A8216002B2375 /* ContentView.swift in Sources */,
+				5B5F5D5D29921937008F86AC /* Log.swift in Sources */,
 				5BEDF1BA298AC23E002B2375 /* DateButton.swift in Sources */,
+				5B19BBC0298B766A003B0F8D /* Stimer.swift in Sources */,
+				5B5F5D5F29921B3B008F86AC /* LogBackground.swift in Sources */,
 				5BEDF1A3298A8216002B2375 /* TaskApp.xcdatamodeld in Sources */,
+				5B5F5D5B29921888008F86AC /* Step.swift in Sources */,
 				5BEDF1B8298A8720002B2375 /* NewDataView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

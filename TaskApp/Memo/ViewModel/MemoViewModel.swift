@@ -58,6 +58,8 @@ class MemoViewModel: ObservableObject{
             
             updateItem = nil
             isNewData.toggle()
+            content = ""
+            date = Date()
             return
         }
         let newTask = Task(context: context)
